@@ -1,5 +1,6 @@
-import { Navbar, css,Link, Text, Avatar, Dropdown } from "@nextui-org/react";
+import { Navbar, User, css, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
 import { Layout } from "./Layout.js";
+import propic from "../../assets/images/imgpropic.jpg"
 
 export default function App() {
   const collapseItems = [
@@ -14,10 +15,10 @@ export default function App() {
     "Help & Feedback",
     "Log Out",
   ];
-   
+
   return (
-      <div className="rounded w-full z-50 fixed">
-          <Navbar isBordered height={90}>
+    <div className="w-full z-50 fixed right-0">
+      <Navbar isBordered={false} maxWidth={"xl"} height={80}>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
           css={{
@@ -26,9 +27,9 @@ export default function App() {
             },
           }}
         >
-        
-          <Text b color="inherit" hideIn="xs">
-            ACME
+
+          <Text h3 color="inherit" hideIn="xs">
+            @moshdev
           </Text>
         </Navbar.Brand>
         <Navbar.Content
@@ -54,13 +55,19 @@ export default function App() {
         >
           <Dropdown placement="bottom-right">
             <Navbar.Item>
+              {/* <User
+                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                name="Ariana Wattson"
+                description="UI/UX Designer @Github"
+              /> */}
               <Dropdown.Trigger>
+
                 <Avatar
                   bordered
                   as="button"
                   color="secondary"
                   size="md"
-                  src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+                  src={propic}
                 />
               </Dropdown.Trigger>
             </Navbar.Item>
@@ -118,6 +125,6 @@ export default function App() {
           ))}
         </Navbar.Collapse>
       </Navbar>
-   </div>
+    </div>
   );
 }
