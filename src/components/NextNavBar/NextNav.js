@@ -16,8 +16,8 @@ export default function App() {
   ];
    
   return (
-      <div className="rounded w-full z-50 fixed ">
-          <Navbar isBordered>
+      <div className="rounded w-full z-50 fixed">
+          <Navbar isBordered height={90}>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
           css={{
