@@ -9,21 +9,38 @@ import Projects from "./components/projects/Projects";
 import Resume from "./components/resume/Resume";
 import Testimonial from "./components/tesimonial/Testimonial";
 
+// 1. import `NextUIProvider` component
+import { createTheme, NextUIProvider } from '@nextui-org/react';
+import NextModal from "./components/NextModal";
+import NextNav from "./components/NextNavBar/NextNav";
+
 function App() {
+
+  const darkTheme = createTheme({
+    type: 'dark'
+  });
+
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText px-4">
-        <Navbar />
-      <div className="max-w-screen-xl mx-auto">
-        <Banner />
-        <Features />
-        <Projects />
-        <Resume />
-        <Testimonial />
-        <Contact />
-        <Footer />
-        <FooterBottom />
+    <NextUIProvider theme={darkTheme}>
+
+
+      <div className="w-full allBg  h-auto bg-bodyColor text-lightText px-4">
+        {/* <Navbar /> */}
+        <NextNav />
+
+        <div className="max-w-screen-xl mx-auto">
+          <Banner />
+          <Resume />
+          
+          <Features />
+          <Testimonial />
+          <Projects />
+          {/* <Contact /> */}
+          {/* <Footer /> */}
+          <FooterBottom />
+        </div>
       </div>
-    </div>
+    </NextUIProvider>
   );
 }
 
