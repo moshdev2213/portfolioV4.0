@@ -1,6 +1,7 @@
 import React from "react";
-import { Modal, Input, Row, Checkbox, Button, Text } from "@nextui-org/react";
-import { FaGlobe } from "react-icons/fa";
+import { Modal, Input, Row, Checkbox, Button, Text,User } from "@nextui-org/react";
+// import { FaGlobe } from "react-icons/fa";
+import propic from "../assets/images/imgpropic.jpg"
 
 
 export default function NextModal({}) {
@@ -12,15 +13,21 @@ export default function NextModal({}) {
     };
     return (
       <div>
-         <span onClick={handler} className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                <FaGlobe />
-                
-              </span>
+        <User
+              
+              src={propic}
+              size="md"
+              pointer
+              zoomed
+              name="M Shabeer"
+              onClick={handler}
+            >
+               <User.Link href="https://github.com/moshdev2213">@moshdev2213</User.Link>
+            </User>
        
         <Modal
           closeButton
           blur
-          preventClose
           aria-labelledby="modal-title"
           open={visible}
           onClose={closeHandler}

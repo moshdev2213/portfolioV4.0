@@ -1,5 +1,6 @@
 import { Navbar, User, css, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
 import propic from "../../assets/images/imgpropic.jpg"
+import NextModal from '../NextModal';
 
 export default function App() {
   const collapseItems = [
@@ -53,16 +54,8 @@ export default function App() {
           }}
         >
           <Navbar.Item>
-            <User
-              src={propic}
-              size="md"
-              pointer
-              zoomed
-              name="M Shabeer"
-              
-            >
-               <User.Link href="https://nextui.org/">@moshdev2213</User.Link>
-            </User>
+            <NextModal/>
+            
 
           </Navbar.Item>
 
