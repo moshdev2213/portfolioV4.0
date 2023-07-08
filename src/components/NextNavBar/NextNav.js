@@ -1,5 +1,4 @@
 import { Navbar, User, css, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
-import { Layout } from "./Layout.js";
 import propic from "../../assets/images/imgpropic.jpg"
 
 export default function App() {
@@ -53,77 +52,21 @@ export default function App() {
             },
           }}
         >
-          <Dropdown placement="bottom-right">
-            <Navbar.Item>
-              {/* <User
-                src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                name="Ariana Wattson"
-                description="UI/UX Designer @Github"
-              /> */}
-              <Dropdown.Trigger>
+          <Navbar.Item>
+            <User
+              src={propic}
+              size="md"
+              pointer
+              zoomed
+              name="M Shabeer"
+              
+            >
+               <User.Link href="https://nextui.org/">@moshdev2213</User.Link>
+            </User>
 
-                <Avatar
-                  bordered
-                  as="button"
-                  color="secondary"
-                  size="md"
-                  src={propic}
-                />
-              </Dropdown.Trigger>
-            </Navbar.Item>
-            <Dropdown.Menu
-              aria-label="User menu actions"
-              color="secondary"
-              onAction={(actionKey) => console.log({ actionKey })}
-            >
-              <Dropdown.Item key="profile" css={{ height: "$18" }}>
-                <Text b color="inherit" css={{ d: "flex" }}>
-                  Signed in as
-                </Text>
-                <Text b color="inherit" css={{ d: "flex" }}>
-                  zoey@example.com
-                </Text>
-              </Dropdown.Item>
-              <Dropdown.Item key="settings" withDivider>
-                My Settings
-              </Dropdown.Item>
-              <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
-              <Dropdown.Item key="analytics" withDivider>
-                Analytics
-              </Dropdown.Item>
-              <Dropdown.Item key="system">System</Dropdown.Item>
-              <Dropdown.Item key="configurations">Configurations</Dropdown.Item>
-              <Dropdown.Item key="help_and_feedback" withDivider>
-                Help & Feedback
-              </Dropdown.Item>
-              <Dropdown.Item key="logout" withDivider color="error">
-                Log Out
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          </Navbar.Item>
+
         </Navbar.Content>
-        <Navbar.Collapse>
-          {collapseItems.map((item, index) => (
-            <Navbar.CollapseItem
-              key={item}
-              activeColor="secondary"
-              css={{
-                color: index === collapseItems.length - 1 ? "$error" : "",
-              }}
-              isActive={index === 2}
-            >
-              <Link
-                color="inherit"
-                css={{
-                  minWidth: "100%",
-                }}
-                href="#"
-              >
-                {item}
-              </Link>
-            </Navbar.CollapseItem>
-          ))}
-        </Navbar.Collapse>
       </Navbar>
     </div>
   );

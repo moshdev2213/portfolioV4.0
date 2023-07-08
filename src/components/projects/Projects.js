@@ -4,6 +4,8 @@ import { projectOne, projectTwo, projectThree } from "../../assets/index";
 import ProjectsCard from './ProjectsCard';
 
 const Projects = () => {
+
+  
   return (
     <section
       id="projects"

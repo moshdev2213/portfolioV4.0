@@ -1,7 +1,9 @@
 import React from "react";
 import { Modal, Input, Row, Checkbox, Button, Text } from "@nextui-org/react";
+import { FaGlobe } from "react-icons/fa";
 
-export default function NextModal() {
+
+export default function NextModal({}) {
     const [visible, setVisible] = React.useState(false);
     const handler = () => setVisible(true);
     const closeHandler = () => {
@@ -9,13 +11,16 @@ export default function NextModal() {
       console.log("closed");
     };
     return (
-        <div>
-        <Button auto color="warning" shadow onPress={handler}>
-          Open modal
-        </Button>
+      <div>
+         <span onClick={handler} className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
+                <FaGlobe />
+                
+              </span>
+       
         <Modal
           closeButton
           blur
+          preventClose
           aria-labelledby="modal-title"
           open={visible}
           onClose={closeHandler}
