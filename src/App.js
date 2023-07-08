@@ -3,6 +3,7 @@ import Banner from "./components/banner/Banner";
 import Contact from "./components/contact/Contact";
 import Features from "./components/features/Features";
 import Footer from "./components/footer/Footer";
+import Skills from "./components/skills/Skills";
 import FooterBottom from "./components/footer/FooterBottom";
 import Navbar from "./components/navbar/Navbar";
 import Projects from "./components/projects/Projects";
@@ -13,6 +14,7 @@ import Testimonial from "./components/tesimonial/Testimonial";
 import { createTheme, NextUIProvider } from '@nextui-org/react';
 import NextModal from "./components/NextModal";
 import NextNav from "./components/NextNavBar/NextNav";
+import Experience from "./components/resume/Experience";
 
 function App() {
 
@@ -30,10 +32,13 @@ function App() {
 
         <div className="max-w-screen-xl mx-auto">
           <Banner />
-          <Resume />
+          <Experience/>
+          
+          {/* <Resume /> */}
           
           <Features />
-          <Testimonial />
+          <Skills/>
+          {/* <Testimonial /> */}
           <Projects />
           {/* <Contact /> */}
           {/* <Footer /> */}

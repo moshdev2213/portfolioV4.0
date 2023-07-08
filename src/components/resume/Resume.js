@@ -1,13 +1,11 @@
 import React, {  useState } from 'react'
 import Title from '../layouts/Title';
 import Education from './Education';
-import Skills from './Skills';
 import Achievement from './Achievement';
 import Experience from "./Experience"
 
 const Resume = () => {
    const [educationData, setEducationData] = useState(true);
-   const [skillData, setSkillData] = useState(false);
    const [experienceData, setExperienceData] = useState(false);
    const [achievementData, setAchievementData] = useState(false);
   return (
@@ -15,12 +13,11 @@ const Resume = () => {
       <div className="flex justify-center items-center text-center">
         <Title title="7+ YEARS OF EXPERIENCE" des="More About Me" />
       </div>
-      <div>
-        <ul className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+      <div className='md:m-auto md:w-9/12'>
+        <ul className=" grid grid-cols-1 md:grid-cols-3 xl:grid-cols-3">
           <li
             onClick={() =>
               setEducationData(true) &
-              setSkillData(false) &
               setExperienceData(false) &
               setAchievementData(false)
             }
@@ -32,23 +29,10 @@ const Resume = () => {
           >
             Education
           </li>
+        
           <li
             onClick={() =>
               setEducationData(false) &
-              setSkillData(true) &
-              setExperienceData(false) &
-              setAchievementData(false)
-            }
-            className={`${
-              skillData ? "bg-white text-black font-bold rounded-lg" : "border-transparent"
-            } resumeLi`}
-          >
-            Professional Skills
-          </li>
-          <li
-            onClick={() =>
-              setEducationData(false) &
-              setSkillData(false) &
               setExperienceData(true) &
               setAchievementData(false)
             }
@@ -63,7 +47,6 @@ const Resume = () => {
           <li
             onClick={() =>
               setEducationData(false) &
-              setSkillData(false) &
               setExperienceData(false) &
               setAchievementData(true)
             }
@@ -78,7 +61,6 @@ const Resume = () => {
         </ul>
       </div>
       {educationData && <Education />}
-      {skillData && <Skills />}
       {achievementData && <Achievement />}
       {experienceData && <Experience />}
  

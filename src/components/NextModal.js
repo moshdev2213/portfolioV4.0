@@ -22,7 +22,7 @@ export default function NextModal({}) {
               name="M Shabeer"
               onClick={handler}
             >
-               <User.Link href="https://github.com/moshdev2213">@moshdev2213</User.Link>
+               <User.Link color="secondary" href="https://github.com/moshdev2213">@moshdev2213</User.Link>
             </User>
        
         <Modal

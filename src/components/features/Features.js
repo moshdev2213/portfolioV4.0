@@ -5,7 +5,7 @@ import { featuresData } from "../../data/data";
 const Features = () => {
   return (
     <section
-      id="features"
+      id="services"
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <Title title="Features" des="What I Do" />
