@@ -14,7 +14,8 @@ export default function NextModal({}) {
     return (
       <div>
         <User
-              
+              bordered
+              color = {"secondary"}
               src={propic}
               size="md"
               pointer

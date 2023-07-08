@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { BsGithub } from "react-icons/bs";
-import { FaGlobe } from "react-icons/fa";
+import ProjectModal from './ProjectModal';
+import { Link } from '@nextui-org/react';
 
-const ProjectsCard = ({ title, des, src }) => {
-  
+const ProjectsCard = ({ title, des, src ,url}) => {
+
 
   return (
-    <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-black bg-opacity-20 hover:bg-opacity-40 duration-300">
+    <div className="w-full p-4 xl:px-5 h-fit xl:py-5 rounded-lg shadow-shadowOne flex flex-col bg-black bg-opacity-20 hover:bg-opacity-40 duration-300">
       <div className="w-full h-[80%] overflow-hidden rounded-lg">
         <img
           className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
@@ -21,20 +22,16 @@ const ProjectsCard = ({ title, des, src }) => {
               {title}
             </h3>
             <div className="flex gap-2">
-            <span  className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                <FaGlobe />
-                
-              </span>
-           
-              <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
-                <BsGithub />
-              </span>
-            
+              <ProjectModal des={des} head={title} url={ url} />
+
+              <Link target="_blank" href={url}>
+                <span className="text-lg w-10 h-10 rounded-full bg-black inline-flex justify-center items-center text-gray-400 hover:text-designColor duration-300 cursor-pointer">
+                  <BsGithub />
+                </span>
+              </Link>
+
             </div>
           </div>
-          <p className="text-sm tracking-wide mt-3 hover:text-gray-100 duration-300">
-            {des}
-          </p>
         </div>
       </div>
     </div>
