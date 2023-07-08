@@ -3,7 +3,7 @@ import { HiArrowRight } from "react-icons/hi";
 
 const Card = ({item:{title,des,icon}}) => {
   return (
-    <div className="w-full px-12 h-80 py-10 rounded-lg shadow-shadowOne flex items-center bg-black bg-opacity-20 hover:bg-opacity-40 duration-100 hover:-translate-y-1 transition-all group">
+    <div className="w-full px-5 h-fit py-5 rounded-lg shadow-shadowOne flex items-center bg-black bg-opacity-20 hover:bg-opacity-40 duration-100 hover:-translate-y-1 transition-all group">
       <div className="h-72 overflow-y-hidden">
         <div className="flex h-full flex-col gap-10 translate-y-16 group-hover:translate-y-0 transition-transform duration-500">
           <div className="w-10 h-8 flex flex-col justify-between">
@@ -24,9 +24,9 @@ const Card = ({item:{title,des,icon}}) => {
               {title}
             </h2>
             <p className="base">{des}</p>
-            <span className="text-2xl text-designColor">
+            {/* <span className="text-2xl text-designColor">
               <HiArrowRight />
-            </span>
+            </span> */}
           </div>
         </div>
       </div>

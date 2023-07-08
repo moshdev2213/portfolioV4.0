@@ -32,7 +32,7 @@ export default function ProjectModal({ des,head,url }) {
                         Close
                     </Button>
                     <Link target="_blank" href={url}>
-                        <Button auto color="success">
+                        <Button shadow auto color="success">
                             Browse Code
                         </Button>
                     </Link>

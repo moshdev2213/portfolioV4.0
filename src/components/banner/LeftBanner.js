@@ -4,7 +4,7 @@ import Media from './Media';
 
 const LeftBanner = () => {
     const [text] = useTypewriter({
-      words: ["Professional Coder.", "Full Stack Developer.", "UI Designer."],
+      words: ["Code Lover.", "Full Stack Developer.", "Student Exploring."],
       loop: true,
       typeSpeed: 20,
       deleteSpeed: 10,
@@ -26,9 +26,7 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I use animation as a third dimension by which to simplify experiences
-          and kuiding thro each and every interaction. I'm not adding motion
-          just to spruce things up, but doing it in ways that.
+        A self-motivated developer, driven by a deep passion for coding, <br /> constantly seeking new opportunities to grow, learn, and create <br /> impactful solutions  that push the boundaries of technology and inspire others.
         </p>
       </div>
      {/* Media */}

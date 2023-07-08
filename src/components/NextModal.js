@@ -1,6 +1,6 @@
 import React from "react";
-import { Modal, Input, Row, Checkbox, Button, Text,User } from "@nextui-org/react";
-// import { FaGlobe } from "react-icons/fa";
+import { Modal, Input, Row, Button, Text,User } from "@nextui-org/react";
+import { FaPhone,FaMailBulk } from "react-icons/fa";
 import propic from "../assets/images/imgpropic.jpg"
 
 
@@ -35,9 +35,9 @@ export default function NextModal({}) {
         >
           <Modal.Header>
             <Text id="modal-title" size={18}>
-              Welcome to
+              Welcome Mate
               <Text b size={18}>
-                NextUI
+                 😃💗
               </Text>
             </Text>
           </Modal.Header>
@@ -45,34 +45,31 @@ export default function NextModal({}) {
             <Input
               clearable
               bordered
+              disabled
               fullWidth
               color="primary"
               size="lg"
-              placeholder="Email"
-              
+              placeholder="moshdev2213@gmail.com"
+              contentLeft={ <FaMailBulk fill="currentColor"/>  }
             />
             <Input
               clearable
               bordered
               fullWidth
+              disabled
               color="primary"
               size="lg"
-              placeholder="Password"
-              
+              placeholder="+94 78 5******"
+              contentLeft={ <FaPhone fill="currentColor"/>  }
             />
-            <Row justify="space-between">
-              <Checkbox>
-                <Text size={14}>Remember me</Text>
-              </Checkbox>
-              <Text size={14}>Forgot password?</Text>
-            </Row>
+            
           </Modal.Body>
           <Modal.Footer>
             <Button auto flat color="error" onPress={closeHandler}>
               Close
             </Button>
-            <Button auto onPress={closeHandler}>
-              Sign in
+            <Button shadow color="secondary" auto onPress={closeHandler}>
+              Download CV
             </Button>
           </Modal.Footer>
         </Modal>

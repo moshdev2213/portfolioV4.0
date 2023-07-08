@@ -24,37 +24,37 @@ const Experience = () => {
         <div>
 
           <div className="flex flex-col gap-4">
-            <p className="text-sm text-designColor tracking-[4px]">2010 - 2022</p>
+            <p className="text-sm text-designColor tracking-[4px]">2004 - Present</p>
             <h2 className="text-4xl font-bold">Education</h2>
           </div>
           <div className="mt-14 w-full border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
             <ResumeCard
               url={wis}
               title="Wayamba International"
-              subTitle="Google Out Tech - (2017 - Present)"
+              subTitle="Primary Education - (2004 - 2015)"
               result="Kurunegala"
-              des="Google's hiring process is an important part of our culture. Googlers care deeply about their teams and the people who make them up."
+              des="Wayamba International School is a prestigious Educational Institute including well qualified Teacher."
             />
             <ResumeCard
               url={lakdas}
               title="Lakdas De Mel"
-              subTitle="Apple Developer Team - (2012 - 2016)"
+              subTitle="Ordinary Level - (2015 - 2018)"
               result="Kurunegala"
-              des="A popular destination with a growing number of highly qualified homegrown graduates, it's true that securing a role in Malaysia isn't easy."
+              des="A popular school with a growing number of highly qualified Students Situtaed In the Heart Of Kurunegala"
             />
             <ResumeCard
               url={annes}
               title="St Annes College"
-              subTitle="Nike - (2020 - 2011)"
+              subTitle="Advanced Level - (2018 - 2020)"
               result="Kurunegala"
-              des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
+              des="St. Anne's College is a Premier Boys College in Sri Lanka located in the scenic city of Kurunegala. With More Than 3000 of Students Learning With Discipline"
             />
             <ResumeCard
               url={sliit}
               title="SLIIT"
-              subTitle="Nike - (2020 - 2011)"
+              subTitle="Higher Studies - (2020 - Present)"
               result="Malabe"
-              des="The Oman economy has grown strongly over recent years, having transformed itself from a producer and innovation-based economy."
+              des="Sri Lanka Institute of Information Technology (SLIIT) is the largest IT degree awarding institute in Sri Lanka in the field of Information Technology."
             />
           </div>
         </div>
@@ -67,23 +67,24 @@ const Experience = () => {
             <ResumeCard
               url={photograpy}
               title="Photography"
-              subTitle="Job To Be Intern(2023 - present)"
+              subTitle="Capturing moments, expressing creativity."
               result="N/A"
-              des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+              des="love photography because it allows me to capture and preserve beautiful moments, emotions, and stories in a single frame.."
             />
             <ResumeCard
               url={travel}
               title="Travelling"
-              subTitle="Job To Be Intern(2023 - present)"
+              subTitle="Travelling: Adventure, exploration, freedom."
               result="N/A"
-              des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+              des="
+              I adore traveling because it opens my eyes to new cultures, landscapes, and experiences, igniting a sense of adventure and broadening my perspective on the world."
             />
             <ResumeCard
               url={foody}
               title="Foody Vibes"
-              subTitle="Job To Be Intern(2023 - present)"
+              subTitle="Food: Taste, joy, connection."
               result="N/A"
-              des="The training provided by universities in order to prepare people to work in various sectors of the economy or areas of culture."
+              des="A flavorful adventure that delights my senses, satisfies my cravings, and brings people together through the universal language of deliciousness."
             />
             
           </div>

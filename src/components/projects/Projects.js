@@ -101,7 +101,7 @@ const Projects = () => {
         />
         <ProjectsCard
           title="HELAGPT"
-          url="#"
+          url="#projects"
           des={<>
             🤖📱 HELAGPT: Your Intelligent Chat Bot Companion! 🚀🗣️
             <br />
@@ -167,7 +167,7 @@ const Projects = () => {
         />
         <ProjectsCard
           title="Dean Apparels"
-          url="#"
+          url="https://github.com/SLIITITP/y2_s2_wd_it_01-itp2023_s2_b02_g26"
           des={(
             <>
               👔💼 Introducing Dean Apparels: Elevating Men's Fashion to New Heights! ,With Best Apparel Management👕🧥
